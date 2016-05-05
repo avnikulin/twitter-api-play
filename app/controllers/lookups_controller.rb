@@ -10,6 +10,6 @@ class LookupsController < ApplicationController
 
   def show
     @twitter = TwitterSearch.new
-    @twitter_timeline = @twitter.get_timeline(params['user'], 25)
+    @twitter_timeline = @twitter.get_timeline(params['user'])
   end
 end
