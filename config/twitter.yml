@@ -1,0 +1,9 @@
+development: &default
+  TWITTER_CONSUMER_KEY: OfhK7vAG5CpjNcKBuVNBF879g
+  TWITTER_CONSUMER_SECRET: naLkJVfc5xfImv98OnEVb0hoCpgzlwC8bOXqytbKaiLYt6yMY4
+
+test:
+  <<: *default
+
+production:
+  <<: *default

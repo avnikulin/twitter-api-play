@@ -1,0 +1,11 @@
+<% if @twitter_timeline.empty? %>
+  <%= "#{params['user']} has no tweets" %>
+<% else %>
+  <ul>
+  <% @twitter_timeline.each do |tweet| %>
+    <li>
+      <%= "#{tweet.user.screen_name} (#{tweet.created_at.to_formatted_s(:short)}): #{tweet.text}" %>
+    </li>
+  <% end %>
+  </ul>
+<% end %>

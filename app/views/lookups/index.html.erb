@@ -1,0 +1,5 @@
+<h1>Lookup Tweets By User</h1>
+<%= form_tag lookups_search_path, method: :get do %>
+  <%= text_field_tag 'user' %>
+  <%= submit_tag 'Lookup' %>
+<% end %>
