@@ -1,7 +1,7 @@
 #Twitter-Api-Play-Client
 
 ##App Design
-My app primarily relies on the `twitter` gem which is a fully functional twitter API client with all the bells and whistles. I chose to use the gem because it seems to be well maintained and very functional. I toyed with the idea to create a custom twitter API client from scratch but I felt that it would take up too much of my time and the existing twitter api gem seemed to work very well. For caching API calls, I used memcached with the `dalli` gem because it's a simple and easy way to cache requests. For authentication, I just chose to use Devise because it's a great authentication system and a basic configuration takes only a few minutes. My next feature would be to incorporate `omniauth` to sign-up a user as a twitter user and maybe allow users to post tweets.
+My app primarily relies on the `twitter` gem which is a fully functional twitter API client with all the bells and whistles. I chose to use the gem because it seems to be well maintained and very functional. For caching API calls, I used memcached with the `dalli` gem because it's a simple and easy way to cache requests. My next feature would be to incorporate `omniauth` to sign-up a user as a twitter user and maybe allow users to post tweets.
 
 ##Local environment setup instructions
 
